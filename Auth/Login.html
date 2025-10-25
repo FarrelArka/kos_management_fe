@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uma Kos - Daftar</title>
     <link rel="stylesheet" href="../public/css/style.css" />
-</head>
+  </head>
 
-<body>
-    <div id="navbar"></div>
-
+  <body>
+    <nav id="navbar" class="navbar">
+      <div id="logo" class="logo">
+        <img src="../public/img/Logo.png" alt="logo" />
+      </div>
+      <div class="nav-link">
+        <a class="active" href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Kos</a>
+        <a href="../Auth/Login.html">Login</a>
+        <a href="../Auth/Register.html">Register</a>
+      </div>
+    </nav>
     <!-- Main Container -->
     <div class="main-container">
-        <div class="register-card">
-            <h2>Daftar</h2>
-            <form id="registerForm">
-                <div class="group">
-                    <div class="input-list">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Masukkan email" required />
-                    </div>
-                </div>
+      <div class="register-card">
+        <h2>Daftar</h2>
+        <form id="registerForm">
+          <div class="group">
+            <div class="input-list">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Masukkan email"
+                required
+              />
+            </div>
+          </div>
 
-                <div class="group">
-                    <div class="input-list">
-                        <label for="password">Password</label>
-                        <div class="password-wrapper">
-                            <input type="password" id="password" name="password" placeholder="Masukkan password"
-                                required />
-                            <span class="password-toggle" onclick="togglePassword()">👁</span>
-                        </div>
-                    </div>
-                </div>
+          <div class="group">
+            <div class="input-list">
+              <label for="password">Password</label>
+              <div class="password-wrapper">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Masukkan password"
+                  required
+                />
+                <span class="password-toggle" onclick="togglePassword()"
+                  >👁</span
+                >
+              </div>
+            </div>
+          </div>
 
-                <button type="submit" class="submit-btn">Masuk</button>
+          <button type="submit" class="submit-btn">Masuk</button>
 
-                <div class="auth-link">
-                    Belum ada akun? <a href="../Auth/Register.html">Daftar ke Akun!</a>
-                </div>
-            </form>
-        </div>
+          <div class="auth-link">
+            Belum ada akun? <a href="../Auth/Register.html">Daftar ke Akun!</a>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="../public/js/auth.js"></script>
-    <script src="../public/js/script.js"></script>
-</body>
-
+  </body>
 </html>
