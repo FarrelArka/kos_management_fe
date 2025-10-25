@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Kos - Cari Kosan Tanpa Drama</title>
+ <link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#d2691e"/>
+                    <path d="M 30 35 Q 35 25 40 35" stroke="white" stroke-width="3" fill="none"/>
+                    <path d="M 60 35 Q 65 25 70 35" stroke="white" stroke-width="3" fill="none"/>
+                    <circle cx="38" cy="45" r="4" fill="white"/>
+                    <circle cx="62" cy="45" r="4" fill="white"/>
+                    <path d="M 35 60 Q 50 70 65 60" stroke="white" stroke-width="3" fill="none"/>
+                </svg>
+                <span>Uma Kos</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#kos" class="active">Kos</a></li>
+                <li><div class="user-icon">👤</div></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <p class="hero-subtitle">Cari kosan tanpa drama?</p>
+            <h1 class="hero-title">UMAKOS SOLUSINYA!</h1>
+            
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="Cari lokasi, nama kos, atau area..."
+                    id="searchInput"
+                >
+                <button class="search-btn" onclick="handleSearch()">Cari Sekarang!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kos Listing Section -->
+    <div class="kos-section">
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <button class="filter-btn">
+                ☰ Filter
+            </button>
+            <input type="text" class="filter-search" placeholder="Cari kos...">
+            <button class="cari-btn">
+                🔍 Cari
+            </button>
+        </div>
+
+        <!-- Kos List -->
+        <div class="kos-list">
+            <!-- Kos Card 1 -->
+            <div class="kos-card">
+                <img src="https://via.placeholder.com/150" alt="Kos" class="kos-image">
+                <div class="kos-info">
+                    <h3 class="kos-title">Kos Lorem</h3>
+                    <div class="kos-location">📍 Jawa Tengah</div>
+                    <div class="kos-rating">⭐ 5</div>
+                    <div class="kos-type type-perempuan">♀ Kos Perempuan</div>
+                </div>
+                <div class="kos-price-section">
+                    <div class="kos-price">Rp. 200.000/Bulan</div>
+                    <button class="book-btn">📋 Book</button>
+                </div>
+            </div>
+
+            <!-- Kos Card 2 -->
+            <div class="kos-card">
+                <img src="https://via.placeholder.com/150" alt="Kos" class="kos-image">
+                <div class="kos-info">
+                    <h3 class="kos-title">Kos Lorem</h3>
+                    <div class="kos-location">📍 Jawa Tengah</div>
+                    <div class="kos-rating">⭐ 4</div>
+                    <div class="kos-type type-laki">♂ Kos Laki-Laki</div>
+                </div>
+                <div class="kos-price-section">
+                    <div class="kos-price">Rp. 200.000/Bulan</div>
+                    <button class="book-btn">📋 Book</button>
+                </div>
+            </div>
+
+            <!-- Kos Card 3 -->
+            <div class="kos-card">
+                <img src="https://via.placeholder.com/150" alt="Kos" class="kos-image">
+                <div class="kos-info">
+                    <h3 class="kos-title">Kos Lorem</h3>
+                    <div class="kos-location">📍 Jawa Tengah</div>
+                    <div class="kos-rating">⭐ 3</div>
+                    <div class="kos-type type-campur">⚥ Kos Campur</div>
+                </div>
+                <div class="kos-price-section">
+                    <div class="kos-price">Rp. 200.000/Bulan</div>
+                    <button class="book-btn">📋 Book</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="page-btn">&lt;</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">&gt;</button>
+        </div>
+    </div>
+<!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="#d2691e"/>
+                        <path d="M 30 35 Q 35 25 40 35" stroke="white" stroke-width="3" fill="none"/>
+                        <path d="M 60 35 Q 65 25 70 35" stroke="white" stroke-width="3" fill="none"/>
+                        <circle cx="38" cy="45" r="4" fill="white"/>
+                        <circle cx="62" cy="45" r="4" fill="white"/>
+                        <path d="M 35 60 Q 50 70 65 60" stroke="white" stroke-width="3" fill="none"/>
+                    </svg>
+                    <span>Uma Kos</span>
+                </div>
+                <p class="footer-desc">Platform terpercaya untuk menemukan kos impian Anda. Cari kosan tanpa drama, nyaman dan terjangkau.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">🐦</a>
+                    <a href="#" class="social-icon">💼</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Layanan</h4>
+                <ul class="footer-links">
+                    <li><a href="#kos">Cari Kos</a></li>
+                    <li><a href="#daftar">Daftarkan Kos</a></li>
+                    <li><a href="#panduan">Panduan Pengguna</a></li>
+                    <li><a href="#tips">Tips Memilih Kos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Tentang Kami</h4>
+                <ul class="footer-links">
+                    <li><a href="#tentang">Tentang Uma Kos</a></li>
+                    <li><a href="#karir">Karir</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#kontak">Hubungi Kami</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Bantuan</h4>
+                <ul class="footer-links">
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#syarat">Syarat & Ketentuan</a></li>
+                    <li><a href="#privasi">Kebijakan Privasi</a></li>
+                    <li><a href="#support">Pusat Bantuan</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Kontak</h4>
+                <ul class="footer-contact">
+                    <li>📧 info@umakos.com</li>
+                    <li>📱 +62 812-3456-7890</li>
+                    <li>📍 Jakarta, Indonesia</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Uma Kos. All rights reserved.</p>
+            <p class="footer-tagline">Cari kosan tanpa drama? Uma Kos solusinya! 🏠</p>
+        </div>
+    </footer>
+    <script src="src/script/index.js">
+    </script>
+</body>
+</html>

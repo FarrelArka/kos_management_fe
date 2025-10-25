@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Kos - Daftar</title>
+    <link rel="stylesheet" href="src/css/register.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#d2691e"/>
+                <path d="M 30 35 Q 35 25 40 35" stroke="white" stroke-width="3" fill="none"/>
+                <path d="M 60 35 Q 65 25 70 35" stroke="white" stroke-width="3" fill="none"/>
+                <circle cx="38" cy="45" r="4" fill="white"/>
+                <circle cx="62" cy="45" r="4" fill="white"/>
+                <path d="M 35 60 Q 50 70 65 60" stroke="white" stroke-width="3" fill="none"/>
+            </svg>
+            <span>Uma Kos</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#kos">Kos</a></li>
+            <li><a href="#daftar" class="active">Daftar</a></li>
+            <li><a href="#masuk">Masuk</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="register-card">
+            <h2>Daftar</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+                        <span class="password-toggle" onclick="togglePassword()">👁️</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" name="role" required>
+                        <option value="">Pilih role</option>
+                        <option value="penyewa">Penyewa</option>
+                        <option value="pemilik">Pemilik Kos</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="register-btn">Daftar</button>
+
+                <div class="login-link">
+                    Sudah ada akun? <a href="#masuk">Masuk ke Akun!</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/src/script/regist.js"></script>
+</body>
+</html>
