@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kos Lorem - Uma</title>
+    <link rel="stylesheet" href="src/css/detail.css">
+</head>
+<body>
+    <nav>
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#d2691e"/>
+                    <path d="M 30 35 Q 35 25 40 35" stroke="white" stroke-width="3" fill="none"/>
+                    <path d="M 60 35 Q 65 25 70 35" stroke="white" stroke-width="3" fill="none"/>
+                    <circle cx="38" cy="45" r="4" fill="white"/>
+                    <circle cx="62" cy="45" r="4" fill="white"/>
+                    <path d="M 35 60 Q 50 70 65 60" stroke="white" stroke-width="3" fill="none"/>
+                </svg>
+                <span>Uma Kos</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#kos" class="active">Kos</a></li>
+                <li><div class="user-icon">👤</div></li>
+            </ul>
+        </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="kos-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='400' viewBox='0 0 360 400'%3E%3Crect fill='%23f0f0f0' width='360' height='400'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%23999'%3EIlustrasi Kos%3C/text%3E%3C/svg%3E" alt="Kos Lorem">
+            </div>
+
+            <div class="kos-info">
+                <div class="kos-header">
+                    <div class="kos-title">
+                        <h1>Kos Lorem</h1>
+                        <div class="kos-location">
+                            <span>📍</span>
+                            <span>Jawa Tengah</span>
+                        </div>
+                    </div>
+                    <div class="kos-price">Rp. 200.000/Bulan</div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-btn">Feature</div>
+                    <div class="feature-btn">Feature</div>
+                    <div class="feature-btn">Feature</div>
+                    <div class="feature-btn">Feature</div>
+                    <div class="feature-btn">Feature</div>
+                    <div class="feature-btn">Feature</div>
+                    <div class="feature-btn">Feature</div>
+                    <div class="feature-btn">Feature</div>
+                </div>
+
+                <div class="kos-footer">
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span class="women-only">♀ Kos Perempuan</span>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn" onclick="handleChat()">
+                            💬 Chat
+                        </button>
+                        <button class="btn" onclick="handleBook()">
+                            📋 Book
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <h2>Reviews</h2>
+            <textarea class="comment-box" id="commentBox" placeholder="Write down your comments here!"></textarea>
+            <button class="send-btn" onclick="sendReview()">📋 Send</button>
+            <div style="clear: both; margin-bottom: 30px;"></div>
+
+            <div id="reviewsList">
+                <div class="review-item">
+                    <div class="review-name">Bagas</div>
+                    <div class="review-text">"Kosnya enak, banget !"</div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-name">Bayu</div>
+                    <div class="review-text">"Eksperiencenya bagus !"</div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-name">Doni</div>
+                    <div class="review-text">"Keren, ada bathtub nya loh"</div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-name">Eric</div>
+                    <div class="review-text">"Gong Xi Fa Cai"</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script/detail.js">
+   </script>
+</body>
+</html>
