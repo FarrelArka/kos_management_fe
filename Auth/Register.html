@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uma Kos - Daftar</title>
+    <link rel="stylesheet" href="../public/css/style.css" />
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="register-card">
+            <h2>Daftar</h2>
+            <form id="registerForm">
+                <div class="group">
+                    <div class="input-list">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Masukkan username" required />
+                    </div>
+
+                    <div class="input-list">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Masukkan email" required />
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="input-list">
+                        <label for="password">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" name="password" placeholder="Masukkan password"
+                                required />
+                            <span class="password-toggle" onclick="togglePassword()">👁</span>
+                        </div>
+                    </div>
+
+                    <div class="input-list">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required />
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="input-list">
+                        <label for="role">Role</label>
+                        <select id="role" name="role" required>
+                            <option disabled selected>Pilih role</option>
+                            <option value="penyewa">Penyewa</option>
+                            <option value="pemilik">Pemilik Kos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Daftar</button>
+
+                <div class="auth-link">
+                    Sudah ada akun? <a href="../Auth/Login.html">Masuk ke Akun!</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../public/js/auth.js"></script>
+    <script src="../public/js/script.js"></script>
+</body>
+
+</html>
